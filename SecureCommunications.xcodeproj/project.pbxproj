@@ -15,6 +15,11 @@
 		2DE63DDD227463DB00CB9AD8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE63DDC227463DB00CB9AD8 /* main.m */; };
 		2DE63DE7227463DB00CB9AD8 /* SecureCommunicationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE63DE6227463DB00CB9AD8 /* SecureCommunicationsTests.m */; };
 		2DE63DF2227463DB00CB9AD8 /* SecureCommunicationsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE63DF1227463DB00CB9AD8 /* SecureCommunicationsUITests.m */; };
+		2DE63E012274671B00CB9AD8 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE63E002274671B00CB9AD8 /* XMLReader.m */; };
+		2DE63E0422747B3200CB9AD8 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE63E0322747B3200CB9AD8 /* RSA.m */; };
+		2DE63E0D2274890600CB9AD8 /* private-pkcs8.pem in Resources */ = {isa = PBXBuildFile; fileRef = 2DE63E0B2274890600CB9AD8 /* private-pkcs8.pem */; };
+		2DE63E0E2274890600CB9AD8 /* public-pkcs8.pem in Resources */ = {isa = PBXBuildFile; fileRef = 2DE63E0C2274890600CB9AD8 /* public-pkcs8.pem */; };
+		2DE63E10227489AB00CB9AD8 /* server-pub-pkcs8.pem in Resources */ = {isa = PBXBuildFile; fileRef = 2DE63E0F227489AB00CB9AD8 /* server-pub-pkcs8.pem */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,13 @@
 		2DE63DED227463DB00CB9AD8 /* SecureCommunicationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecureCommunicationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DE63DF1227463DB00CB9AD8 /* SecureCommunicationsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecureCommunicationsUITests.m; sourceTree = "<group>"; };
 		2DE63DF3227463DB00CB9AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DE63DFF227466F000CB9AD8 /* XMLReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		2DE63E002274671B00CB9AD8 /* XMLReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		2DE63E0222747B0700CB9AD8 /* RSA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
+		2DE63E0322747B3200CB9AD8 /* RSA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
+		2DE63E0B2274890600CB9AD8 /* private-pkcs8.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "private-pkcs8.pem"; sourceTree = "<group>"; };
+		2DE63E0C2274890600CB9AD8 /* public-pkcs8.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "public-pkcs8.pem"; sourceTree = "<group>"; };
+		2DE63E0F227489AB00CB9AD8 /* server-pub-pkcs8.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "server-pub-pkcs8.pem"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +122,13 @@
 				2DE63DD8227463DB00CB9AD8 /* LaunchScreen.storyboard */,
 				2DE63DDB227463DB00CB9AD8 /* Info.plist */,
 				2DE63DDC227463DB00CB9AD8 /* main.m */,
+				2DE63DFF227466F000CB9AD8 /* XMLReader.h */,
+				2DE63E002274671B00CB9AD8 /* XMLReader.m */,
+				2DE63E0222747B0700CB9AD8 /* RSA.h */,
+				2DE63E0322747B3200CB9AD8 /* RSA.m */,
+				2DE63E0B2274890600CB9AD8 /* private-pkcs8.pem */,
+				2DE63E0C2274890600CB9AD8 /* public-pkcs8.pem */,
+				2DE63E0F227489AB00CB9AD8 /* server-pub-pkcs8.pem */,
 			);
 			path = SecureCommunications;
 			sourceTree = "<group>";
@@ -236,7 +255,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DE63DDA227463DB00CB9AD8 /* LaunchScreen.storyboard in Resources */,
+				2DE63E10227489AB00CB9AD8 /* server-pub-pkcs8.pem in Resources */,
 				2DE63DD7227463DB00CB9AD8 /* Assets.xcassets in Resources */,
+				2DE63E0E2274890600CB9AD8 /* public-pkcs8.pem in Resources */,
+				2DE63E0D2274890600CB9AD8 /* private-pkcs8.pem in Resources */,
 				2DE63DD5227463DA00CB9AD8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,7 +285,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DE63DD2227463DA00CB9AD8 /* ViewController.m in Sources */,
+				2DE63E0422747B3200CB9AD8 /* RSA.m in Sources */,
 				2DE63DDD227463DB00CB9AD8 /* main.m in Sources */,
+				2DE63E012274671B00CB9AD8 /* XMLReader.m in Sources */,
 				2DE63DCF227463DA00CB9AD8 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +462,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Y2PN6E5NM;
 				INFOPLIST_FILE = SecureCommunications/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +480,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Y2PN6E5NM;
 				INFOPLIST_FILE = SecureCommunications/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

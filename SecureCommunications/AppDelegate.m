@@ -7,10 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
-@interface AppDelegate ()
-
-@end
+#import <CommonCrypto/CommonCryptor.h>
 
 @implementation AppDelegate
 
