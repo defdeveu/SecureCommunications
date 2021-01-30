@@ -129,7 +129,7 @@
 }
 
 - (NSString *) sendRequest:(NSString *)reqtext {
-    NSString *endpoint = @"http://52.59.118.105:9999/request";
+    NSString *endpoint = @"https://zs.labs.defdev.eu:9998/request";
     NSURLSessionConfiguration *sessionConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:sessionConfiguration];
     NSURL *url = [NSURL URLWithString:endpoint];
